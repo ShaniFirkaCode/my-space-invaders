@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHANI's SPACE INVADERS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onKeyDown="onKeyDown(event)" onload="init()">
+    <h1>SPACE INVADERS</h1>
+    <div class="game-status">
+        <button class="btn" onclick="startGame(this, event)">Start</button>
+        <h4 class="score">Score: <span>0</span></h4>
+        <h4 class="lives">lives:<span>❤️❤️❤️</span></h4>
+        <h4 class="shields">Shields:<span>🛡️🛡️🛡️</span></h4>
+        <h4 class="super-mode">Super Mode: <span>⬆️⬆️⬆️</span></h4>
+    </div>
+    <table class="board">
+    </table>
+    <div class="modal">
+        <h3 class="msg"></h3>
+    </div>
+    <div class="instructions"></div>
+
+    <script src="js/util.js"></script>
+    <script src="js/alien.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
